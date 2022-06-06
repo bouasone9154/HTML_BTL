@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel='icon' href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ເຄື່ອງຄິດໄລ່ເລກ - Calculator</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    
+    <div class="contener">
+        <center>
+            <div class="data">
+                <p><b>ເຄື່ອງຄິດໄລ່ເລກ</b></p>
+            </div>
+        </center>
+        <div class="boxs">
+            <form name="All">
+                <div class="morniter">
+
+                    <input type="text" class="buak" name="dp" readonly>
+                    <input type="text" name="ork" class="phonork" id="dell"  readonly>
+                </div>
+                <div class="poumkod">
+                    <input class="but c" type="button" value="C" onclick="All.dp.value = ''
+                    All.ork.value = '0'">
+                    
+                    
+                    <input class="but as" type="button" value="/" onclick="All.dp.value += '/'">
+                    <br>
+                    <input class="but" type="button" value="7" onclick="All.dp.value += '7'">
+                    <input class="but" type="button" value="8" onclick="All.dp.value += '8'">
+                    <input class="but" type="button" value="9" onclick="All.dp.value += '9'">
+                    <input class="but as" type="button" value="x"  onclick="All.dp.value += '*'">
+                    <br>
+                    <input class="but" type="button" value="4" onclick="All.dp.value += '4'">
+                    <input class="but" type="button" value="5" onclick="All.dp.value += '5'">
+                    <input class="but" type="button" value="6" onclick="All.dp.value += '6'">
+                    <input class="but as" type="button" value="+"  onclick="All.dp.value += '+'">
+                    <br>
+                    <input class="but" type="button" value="1" onclick="All.dp.value += '1'">
+                    <input class="but" type="button" value="2" onclick="All.dp.value += '2'">
+                    <input class="but" type="button" value="3" onclick="All.dp.value += '3'">
+                    <input class="but as" type="button" value="-"  onclick="All.dp.value += '-'">
+                    <br>
+                    <input class="but" type="button" value="0" onclick="All.dp.value += '0'">
+                    <input class="but" type="button" value="." onclick="All.dp.value += '.'">
+                    <input class="but t" type="button" value="=" onclick="All.ork.value = eval(All.dp.value)">
+                    
+
+                </div>
+
+            </form>
+
+        </div>
+    
+    </div>
+   
+</body>
+
+</html>
